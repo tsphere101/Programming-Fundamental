@@ -9,7 +9,7 @@ double magni(double,double);
 int main()
 {
     double x, y, deg, mag;
-    printf("Enter the vector composite : ");
+    printf("Enter the vector composite\n(ex. 3 4) : ");
     scanf("%lf %lf", &x, &y);
     printf("Vector's magnitude is : %.2f\nVector's direction is : %.2f degrees", magni(x,y),direction(x,y));
     return 0;
