@@ -4,6 +4,7 @@
 void remove(char*);
 int main()
 {
+	printf("Enter the string to remove spaces : ");
 	char input[500];
 	fgets(input, 500, stdin);
 	remove(input);
