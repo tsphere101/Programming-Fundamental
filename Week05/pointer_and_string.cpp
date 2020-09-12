@@ -4,20 +4,21 @@
 void convertMe(char*);
 void remove(char*);
 int main()
-{	
-	printf("Input (ex.aB$Cde%%f#) : ");
+{
+	printf("This program will return only alphabet and will alternate the capitality\n");
+	printf("Ex.\nInput : aB$Cde%%f# \nOutput : AbcDEF \n\nInput : ");
 	char input[500];
-	gets_s(input,500);
+	gets_s(input, 500);
 
 	remove(input);
 	convertMe(input);
 
 	printf("Output : ");
-	printf("%s",input);
-	
-	
+	printf("%s", input);
 
-	return 0; 
+
+
+	return 0;
 }
 
 
@@ -57,5 +58,5 @@ void convertMe(char* input)
 		}
 		myPointer++;
 	}
-	
+
 }

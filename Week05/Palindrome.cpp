@@ -6,7 +6,8 @@ int isPalindrome(char*);
 int main()
 {
 	char input[500];
-	gets_s(input,499);
+	printf("Enter the sring to check if it is Palindrom\n : ");
+	gets_s(input, 499);
 	if (isPalindrome(input))
 	{
 		printf("Palindrome");
@@ -25,7 +26,7 @@ int isPalindrome(char* input)
 	}
 	back--;
 
-	for (;back >= front ; back--)
+	for (; back >= front; back--)
 	{
 		if (*back != *front) { break; }
 		front++;
